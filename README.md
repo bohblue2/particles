@@ -3,8 +3,18 @@
 This repository contains Python implementations and simulations related to the Fokker-Planck equation and Langevin dynamics, two fundamental mathematical frameworks for modeling stochastic processes in physics, chemistry, finance, and machine learning.
 
 ## Fokker-Planck Equation 1d Simulation 
-j
+
 See notebooks/fokker_planck_equation_1d_simulation.ipynb for a simulation of the Fokker-Planck equation in 1d.
+
+The Fokker-Planck equation is given by:
+
+$$
+\frac{\partial P(x, t)}{\partial t} = -\frac{\partial}{\partial x} [A(x) P(x, t)] + \frac{\partial^2}{\partial x^2} [B(x) P(x, t)]
+$$
+
+- where $( P(x, t) )$ is the probability density function
+- $( A(x) )$ is the drift coefficient.
+- $( B(x) )$ is the diffusion coefficient.
 
 ```python
     # define negative log likelihood function
