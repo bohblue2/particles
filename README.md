@@ -73,3 +73,21 @@ where:
 <p align="center">
     <img src="./.github/assets/langevin_dynamics_1d_simulation.png" width="700" height="500">
 </p>
+
+## Normalizing Flow models Simulation
+
+See `notebooks/normalizing_flow_models_simulation.ipynb` for a simulation of `Normalizing Flow models`.
+
+$$
+\mathbf{x} = f_K \circ f_{K-1} \circ \cdots \circ f_1(\mathbf{z})
+$$
+
+- where $(\mathbf{z})$ is the latent variable
+
+$$
+p_X(\mathbf{x}) = p_Z(\mathbf{z}) \left| \det \left( \frac{\partial \mathbf{z}}{\partial \mathbf{x}} \right) \right|
+$$
+
+<p align="center">
+    <img src="./.github/assets/normalizing_flow.png" width="700" height="500">
+</p>
