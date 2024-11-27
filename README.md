@@ -2,9 +2,9 @@
 
 This repository contains Python implementations and simulations related to the Fokker-Planck equation and Langevin dynamics, two fundamental mathematical frameworks for modeling stochastic processes in physics, chemistry, finance, and machine learning.
 
-## Fokker-Planck Equation 1d Simulation 
+## Fokker-Planck Equation 1d Simulation
 
-See notebooks/fokker_planck_equation_1d_simulation.ipynb for a simulation of the Fokker-Planck equation in 1d.
+See `notebooks/fokker_planck_equation_1d_simulation.ipynb` for a simulation of the `Fokker-Planck equation` in 1d.
 
 The Fokker-Planck equation is given by:
 
@@ -42,13 +42,34 @@ $$
 ```
 
 <p align="center">
-    <img src="./.github/assets/estimated_return_distribution_100.png">
+    <img src="./.github/assets/estimated_return_distribution_100.png" width="700" height="500">
 </p>
 
 <p align="center">
-    <img src="./.github/assets/estimated_return_distribution_1000.png">
+    <img src="./.github/assets/estimated_return_distribution_1000.png" width="700" height="500">
 </p>
 
 <p align="center">
-    <img src="./.github/assets/estimated_return_distribution_10000.png">
+    <img src="./.github/assets/estimated_return_distribution_10000.png" width="700" height="500">
+</p>
+
+## Langevin Dynamics 1d Simulation
+
+See `notebooks/langevin_dynamics_1d_simulation.ipynb` for a simulation of `Langevin dynamics` in 1d.
+
+The Langevin equation is given by:
+
+$$
+m \frac{d^2 x}{dt^2} = -\gamma \frac{dx}{dt} + F(x) + \eta(t),
+$$
+
+where:
+
+- $m$: mass of the particle
+- $\gamma$: friction coefficient
+- $F(x)$: force derived from the external potential $(F(x) = -\nabla U(x))$
+- $\eta(t)$: Gaussian white noise with mean 0 and $\langle \eta(t) \eta(t{\prime}) \rangle = 2\gamma k_B T \delta(t - t{\prime})$.
+
+<p align="center">
+    <img src="./.github/assets/langevin_dynamics_1d_simulation.png" width="700" height="500">
 </p>
